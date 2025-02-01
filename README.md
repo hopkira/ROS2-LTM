@@ -39,19 +39,25 @@ ollama pull granite3-moe:3b
    ```bash
    source /opt/ros/jazzy/setup.bash
    ```
-2. Build the package:
+2. Create the package (from the ROS2-LTM director)
    ```bash
+   ros2 pkg create --build-type ament_python --license Apache-2.0 ltm_package --dependencies service_ltm rclpy std_msgs example_interfaces ltm_test_client
+   ```
+3. Build the package:
+   ```bash
+   cd ltm_package
    colcon build
    ```
-3. Source the setup files:
+4. Source the setup files:
    ```bash
    . install/setup.bash
    ```
-4. Run the service server:
+
+5. Run the service server:
    ```bash
    ros2 run ltm_package service_ltm
    ```
-5. In a new terminal, test the service by running the client:
+6. In a new terminal, test the service by running the client:
    ```bash
    ros2 run ltm_package ltm_test_client
    ```
