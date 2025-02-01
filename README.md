@@ -1,10 +1,12 @@
 # ROS2 Long Term Memory Service
 
-This repository contains a ROS2 service for managing long term memory in the form of a service and a test client. The service provides capabilities to choose between ollama models, query the robot's memory, and remember new facts. This README file will guide you through deploying and running this service in a ROS2 environment.
+This repository contains a ROS2 retrival augmented generation (RAG) service for managing long term memory in the form of a service and a test client. The service provides capabilities to choose between ollama models, query the robot's memory, and remember new facts. This README file will guide you through deploying and running this service in a ROS2 environment.
 
 ## Overview
 
-The Long Term Memory Service is designed to allow users to interact with a system that can store and retrieve information over time. The information is unstructured and typically biographical. The service uses two types of models: a generative model (GEN_MODEL) and an embedding model (EMBED_MODEL). These two models support the Retrieval Augmented Generation (RAG) pattern that is at the heart of this implementation. The service offers three primary functionalities: changing the ollama models, querying the memory for facts, and remembering new facts.
+The Long Term Memory Service is designed to allow users to interact with a system that can store and retrieve information over time. The information is unstructured and typically biographical. The service will load a backstory for K9 that was generated from Wikipedia synopses of the stories he was in (from a CSV file), but additional facts can be permamently added to his long term memory using the remember capability.
+
+The service uses two types of models: a generative model (GEN_MODEL) and an embedding model (EMBED_MODEL). These two models support the Retrieval Augmented Generation (RAG) pattern that is at the heart of this implementation. The service offers three primary functionalities: changing the ollama models, querying the memory for facts, and remembering new facts.
 
 ## Deployment and Running
 
@@ -75,8 +77,9 @@ You can exercise the service capabilities directly from the command line using R
 |----------------------|-----------------------------------------------------------|
 | service_ltm.py       | Python script containing the service node implementation  |
 | ltm_set_model.srv    | Service definition file for changing the ollama model              |
-| ltm_query.srv        | Service definition file for querying memory              |
+| ltm_query.srv        | Service definition file for querying memory               |
 | ltm_remember.srv     | Service definition file for remembering new facts         |
 | test_ltm.py          | Python script containing the service test client          |
-| package.xml          | XML file describing your ROS2 package                    |
+| package.xml          | XML file describing your ROS2 package                     |
 | CMakeLists.txt       | CMake file to build your ROS2 package                     |
+| k9_stories_500.csv   | Basic facts harvested from Wikipedia (see who_uni repo)   |
