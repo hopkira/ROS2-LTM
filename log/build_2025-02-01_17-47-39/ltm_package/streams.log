@@ -1,0 +1,10 @@
+[0.028s] Invoking command in '/home/hopkira/Documents/GitHub/ROS2-LTM/build/ltm_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(ollama) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(ollama) /usr/bin/cmake /home/hopkira/Documents/GitHub/ROS2-LTM -DCMAKE_INSTALL_PREFIX=/home/hopkira/Documents/GitHub/ROS2-LTM/install/ltm_package
+[0.044s] [33mCMake Warning:
+[0.044s]   Ignoring extra path from command line:
+[0.044s] 
+[0.044s]    "/home/hopkira/Documents/GitHub/ROS2-LTM"
+[0.044s] 
+[0.044s] [0m
+[0.044s] [0mCMake Error: The source directory "/home/hopkira/Documents/GitHub/ROS2-LTM" does not appear to contain CMakeLists.txt.
+[0.044s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.047s] Invoked command in '/home/hopkira/Documents/GitHub/ROS2-LTM/build/ltm_package' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(ollama) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(ollama) /usr/bin/cmake /home/hopkira/Documents/GitHub/ROS2-LTM -DCMAKE_INSTALL_PREFIX=/home/hopkira/Documents/GitHub/ROS2-LTM/install/ltm_package

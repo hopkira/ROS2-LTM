@@ -1,0 +1,40 @@
+running egg_info
+creating build/ltm_package/ltm_package.egg-info
+writing build/ltm_package/ltm_package.egg-info/PKG-INFO
+writing dependency_links to build/ltm_package/ltm_package.egg-info/dependency_links.txt
+writing entry points to build/ltm_package/ltm_package.egg-info/entry_points.txt
+writing requirements to build/ltm_package/ltm_package.egg-info/requires.txt
+writing top-level names to build/ltm_package/ltm_package.egg-info/top_level.txt
+writing manifest file 'build/ltm_package/ltm_package.egg-info/SOURCES.txt'
+reading manifest file 'build/ltm_package/ltm_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/ltm_package/ltm_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package
+copying ltm_package/__init__.py -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package
+copying ltm_package/ltm_test_client.py -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package
+copying ltm_package/service_ltm.py -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package
+running install
+running install_lib
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package
+copying /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package/__init__.py -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package
+copying /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package/ltm_test_client.py -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package
+copying /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/build/lib/ltm_package/service_ltm.py -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package
+byte-compiling /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package/ltm_test_client.py to ltm_test_client.cpython-312.pyc
+byte-compiling /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package/service_ltm.py to service_ltm.cpython-312.pyc
+running install_data
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/share/ament_index
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/share/ament_index/resource_index
+creating /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/share/ament_index/resource_index/packages
+copying resource/ltm_package -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/share/ltm_package
+running install_egg_info
+Copying build/ltm_package/ltm_package.egg-info to /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/python3.12/site-packages/ltm_package-0.0.0-py3.12.egg-info
+running install_scripts
+Installing client script to /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/ltm_package
+Installing service script to /home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/install/ltm_package/lib/ltm_package
+writing list of installed files to '/home/hopkira/Documents/GitHub/ROS2-LTM/ltm_package/build/ltm_package/install.log'
