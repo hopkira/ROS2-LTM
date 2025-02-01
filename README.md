@@ -49,24 +49,24 @@ ollama pull granite3-moe:3b
    ```
 4. Run the service server:
    ```bash
-   ros2 run ltm_package service_ltm  # replace 'ltm_package' with your actual package name
+   ros2 run ltm_package service_ltm
    ```
 5. In a new terminal, test the service by running the client:
    ```bash
-   ros2 run ltm_package ltm_test_client  # replace 'ltm_package' with your actual package name
+   ros2 run ltm_package ltm_test_client
    ```
 
 ## Exercising Service Capabilities from Command Line
 You can exercise the service capabilities directly from the command line using ROS2 commands. Here are examples:
 - Setting a model:
   ```bash
-  ros2 service call /ltm_set_model ltm_package/LtmSetModel "{model_type: 0, model_name: 'test_model'}"
+  ros2 service call /ltm_set_model ltm_package/LtmSetModel "{model_type: EMBED_MODEL, model_name: 'nomic-embed-text'}"
   ```
 - Querying memory:
   ```bash
-  ros2 service call /ltm_query ltm_package/LtmQuery "data: 'your_fact'"
+  ros2 service call /ltm_query ltm_package/LtmQuery "query: 'What happened to the parrot?'"
   ```
-- Remembering a fact:
+- Remembering up to twenty new topics and related facts:
   ```bash
   ros2 service call /ltm_remember ltm_package/LtmRemember "up_to_twenty_topics_of_512_chars: ['your_topic','your_topic_2', 'your_topic_n']"
   ```
