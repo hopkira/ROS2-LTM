@@ -31,7 +31,7 @@ ollama pull granite3-moe:3b
    ```
 3. Navigate to the cloned directory and install the Python dependencies:
    ```bash
-   cd ROS2-LTM && pip3 install -r requirements.txt
+   pip install ollama chromadb pandas --break-system-packages --ignore-installed
    ```
 
 ### Running the Service

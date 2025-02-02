@@ -5,10 +5,12 @@ import chromadb
 from chromadb.config import Settings
 from chromadb.utils import embedding_functions
 import rclpy
+from rclpy.node import Node
 from ltm_package.srv import LtmQuery, LtmSetModel, LtmRemember
 
-class LongTermMemoryService:
-    def __init__(self):
+class LongTermMemoryService(Node):
+    def __init__(self):   
+        super().__init__("MemoryNode") 
         self.gen_model = "granite3-moe:3b"
         self.embed_model = "granite-embedding:30m"
         self.collection_name = "k9_ltm_gran_30m"
